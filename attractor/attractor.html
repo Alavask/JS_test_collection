@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+</head>
+<script	src="Game.js"></script>
+<body onload='Start()'>
+<div align="center">
+<div style="float:right;width:10%">
+Вероятность: <input type="number" id="P" value=1> <button onclick='ChangeP()'>Установить</button>
+<br>
+<br>
+Делитель: <input type="number" id="Div" value=2> <button onclick='ChangeDiv()'>Установить</button>
+<br>
+<br>
+Интервал(мс): <input type="number" id="Int" value=1000> <button onclick='ChangeInt()'>Установить</button>
+<br>
+<br>
+<button onclick='Enable()'>Старт</button>
+<button onclick='Disable()'>Стоп</button>
+<br>
+<br>
+<button onclick='Clear()'>Очистить поле</button>
+</div>
+<div>
+<canvas id='canvas' height='800' width='1500' style="border:1px solid #000000;">
+</canvas>
+</div>
+</div>
+</body>
+</html>
